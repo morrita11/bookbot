@@ -1,6 +1,6 @@
 with open("books/frankenstein.txt") as f:
     file_contents = f.read()
     count = file_contents.split()
-    number = len(count)
+    num_words = len(count)
 
-print(f"Found {number} total wrods")
+print(f"Found {num_words} total words")
