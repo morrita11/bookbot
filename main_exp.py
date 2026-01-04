@@ -17,3 +17,13 @@ def get_num_words(text):
 
 
 main()
+# form odd lesson 
+def count_vowels(text):
+    vowels = {"a", "e", "i", "o", "u", "A", "E", "I", "O", "U"}
+    count = 0
+    unique = set()
+    for char in text:
+        if char in vowels:
+            count += 1
+            unique.add(char)
+    return count, uniqueS
