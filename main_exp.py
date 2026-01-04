@@ -26,4 +26,4 @@ def count_vowels(text):
         if char in vowels:
             count += 1
             unique.add(char)
-    return count, uniqueS
+    return count, unique
