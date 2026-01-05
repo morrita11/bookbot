@@ -1,8 +1,11 @@
-
+import sys
+if len(sys.argv) <= 1:
+    print("Usage: python3 main.py <path_to_book>")
+    sys.exit(1)
 
 
 def main():
-    book_path = "books/frankenstein.txt"
+    book_path = f"{sys.argv[1]}"
     text = get_book_text(book_path)
     from stats import (
     get_num_words,
@@ -15,8 +18,8 @@ def main():
     print_report(book_path, num_words, chars_sorted_list)
 
 
-def get_book_text(path):
-    with open(path) as f:
+def get_book_text(book_path):
+    with open(book_path) as f:
         return f.read()
 
 
