@@ -1,13 +1,14 @@
-from stats import (
-    get_num_words,
-    chars_dict_to_sorted_list,
-    get_chars_dict,
-)
+
 
 
 def main():
     book_path = "books/frankenstein.txt"
     text = get_book_text(book_path)
+    from stats_exp import (
+    get_num_words,
+    chars_dict_to_sorted_list,
+    get_chars_dict,
+)
     num_words = get_num_words(text)
     chars_dict = get_chars_dict(text)
     chars_sorted_list = chars_dict_to_sorted_list(chars_dict)
