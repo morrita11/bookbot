@@ -1,1 +1,1 @@
-from stats import get_num_words
+from stats import word_cont
